@@ -17,7 +17,17 @@
   background: red;
 }
 
+.resetBtn{
+  background: blue;
+}
 .btn:hover {
   transform: scale(1.1);
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.card {
+  border: 2px solid gold;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
 }

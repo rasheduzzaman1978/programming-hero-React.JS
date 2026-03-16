@@ -1,9 +1,47 @@
-import Batsman from '../Batsman'
-import './App.css'
-import Bowler from './Bowler'
-import Counter from './Counter'
+import Batsman from './Batsman';
+import './App.css';
+import Bowler from './Bowler';
+import Counter from './Counter';
+import Users from './Users';
+import { Suspense } from 'react';
+import Friends from './Friends';
+import Posts from './Posts';
+import ShowHideText from './ShowHideText ';
+import DarkModeToggle from './DarkModeToggle';
+import ToDoList from './ToDoList';
+import CharacterCounter from './CharacterCounter';
+import ShowHidePassword from './ShowHidePassword';
+import Comments from './Comments';
+
+
+const fetchUsers = fetch('https://jsonplaceholder.typicode.com/users')
+  .then(res => res.json())
+
+// const fetchFriends = async () => {
+//   const res = await fetch('https://jsonplaceholder.typicode.com/users');
+//   return res.json();
+// }
+
+// const fetchPosts =async() => {
+//   const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+//   return res.json();
+// }
+
+const fetchComments = async () => {
+  const res = await fetch('https://jsonplaceholder.typicode.com/comments');
+  const data = await res.json();
+  return data.slice(0, 10);
+}
+
 
 function App() {
+
+  // const postsPromise = fetchPosts();
+
+  // const friendsPromise = fetchFriends();
+
+  const commentsPromise = fetchComments();
+
   
 function handleClick() {
   alert('I am clicked.')
@@ -16,9 +54,27 @@ function handleClick() {
     const newNum = num + 5;
     alert(newNum);
   }
+
   return (
     <>
       <h3>Vite + React</h3>
+
+      {/* <Suspense fallback={<h4>Posts are coming ...</h4>}>
+        <Posts postsPromise={postsPromise}></Posts>
+      </Suspense>
+      
+      
+      <Suspense fallback={<h3>Loading ...</h3>}>
+        <Users fetchUsers = {fetchUsers}></Users>
+      </Suspense> */}
+
+      {/* <Suspense fallback={<h3>Friends are coming for treat ...</h3>}>
+        <Friends friendsPromise={friendsPromise}></Friends>
+      </Suspense> */}
+
+      <Suspense fallback={<h3>Comments Loading ...</h3>}>
+        <Comments commentsPromise={commentsPromise} ></Comments>
+      </Suspense>
 
       <Bowler></Bowler>
 
@@ -26,6 +82,16 @@ function handleClick() {
 
 
       <Counter></Counter>
+
+      <ShowHideText></ShowHideText>
+
+      <DarkModeToggle></DarkModeToggle>
+
+      <ToDoList></ToDoList>
+
+      <CharacterCounter></CharacterCounter>
+
+      <ShowHidePassword></ShowHidePassword>
 
       {/* {
         <button onclick="handleClick()">Click Me</button>

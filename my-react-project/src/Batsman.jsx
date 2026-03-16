@@ -15,6 +15,7 @@ export default function Batsman() {
     // setRuns(updatedRuns);
     setZeros(zeros + 1);
   }
+  
   const handleSingle = () => {
     // const updatedRuns = runs + 1;
     // setRuns(updatedRuns);

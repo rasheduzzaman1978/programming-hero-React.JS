@@ -21,6 +21,9 @@ export default function Counter() {
     
   }
 
+  const handleReset = () => {
+    setCount(0);
+  }
   const counterStyle = {
     border: '2px solid yellow',
     margin: '20px',
@@ -42,6 +45,8 @@ export default function Counter() {
       <button className='btn minusBtn' onClick={handleSubcription}>
         Minus
         </button>
+
+        <button className='btn resetBtn' onClick={handleReset}>Reset</button>
     </div>
   )
 }
