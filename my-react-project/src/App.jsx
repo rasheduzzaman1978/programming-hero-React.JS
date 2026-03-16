@@ -57,7 +57,7 @@ function handleClick() {
 
   return (
     <>
-      <h3>Vite + React</h3>
+      <h3>Vite & React</h3>
 
       {/* <Suspense fallback={<h4>Posts are coming ...</h4>}>
         <Posts postsPromise={postsPromise}></Posts>
