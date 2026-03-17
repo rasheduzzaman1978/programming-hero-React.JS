@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Starter",
     "price": "Free",
     "response": "Start your journey with essential access.",
@@ -16,6 +17,7 @@
     ]
   },
   {
+    "id": 2,
     "name": "Pro",
     "price": "$12/month",
     "response": "Unlock powerful tools and grow faster.",
@@ -34,6 +36,7 @@
     ]
   },
   {
+    "id": 3,
     "name": "Elite",
     "price": "$29/month",
     "response": "Experience premium performance without limits.",
