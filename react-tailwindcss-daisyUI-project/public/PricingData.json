@@ -1,0 +1,55 @@
+[
+  {
+    "name": "Starter",
+    "price": "Free",
+    "response": "Start your journey with essential access.",
+    "description": "Perfect for beginners exploring the platform.",
+    "features": [
+      "Access to core features",
+      "Limited usage (100 actions/month)",
+      "Basic analytics dashboard",
+      "Community support",
+      "Standard performance speed",
+      "1 user account",
+      "Basic customization options",
+      "Email notifications"
+    ]
+  },
+  {
+    "name": "Pro",
+    "price": "$12/month",
+    "response": "Unlock powerful tools and grow faster.",
+    "description": "Best for active users who need more flexibility and performance.",
+    "features": [
+      "Everything in Starter",
+      "Unlimited usage",
+      "Advanced analytics & insights",
+      "Priority email support",
+      "Faster processing speed",
+      "Up to 5 user accounts",
+      "Custom themes & branding",
+      "API access",
+      "Export data (CSV, PDF)",
+      "Automation tools"
+    ]
+  },
+  {
+    "name": "Elite",
+    "price": "$29/month",
+    "response": "Experience premium performance without limits.",
+    "description": "Designed for professionals and teams needing maximum power.",
+    "features": [
+      "Everything in Pro",
+      "Unlimited team members",
+      "Dedicated account manager",
+      "24/7 priority support",
+      "Custom integrations",
+      "Highest performance & speed",
+      "Advanced security (2FA, encryption)",
+      "Team collaboration tools",
+      "Usage insights & reports",
+      "Early access to new features",
+      "Custom onboarding & training"
+    ]
+  }
+]

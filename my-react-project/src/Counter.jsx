@@ -36,17 +36,17 @@ export default function Counter() {
     <div style={counterStyle}>
       <h3>Count: {count} </h3>
 
-      <button className='btn addBtn' onClick={handleAdd}>
+      <button className='my-btn addBtn' onClick={handleAdd}>
         Add
         </button>
 
       <br />
 
-      <button className='btn minusBtn' onClick={handleSubcription}>
+      <button className='my-btn minusBtn' onClick={handleSubcription}>
         Minus
         </button>
 
-        <button className='btn resetBtn' onClick={handleReset}>Reset</button>
+        <button className='my-btn resetBtn' onClick={handleReset}>Reset</button>
     </div>
   )
 }

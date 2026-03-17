@@ -57,7 +57,11 @@ function handleClick() {
 
   return (
     <>
-      <h3>Vite & React</h3>
+      <h3 className="text-7xl font-bold text-center text-green-500 mb-10" >Vite & React</h3>
+
+      <button className=" btn btn-sm btn-primary text-white">
+  DaisyUI Button
+</button>
 
       {/* <Suspense fallback={<h4>Posts are coming ...</h4>}>
         <Posts postsPromise={postsPromise}></Posts>

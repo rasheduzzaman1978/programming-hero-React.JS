@@ -1,5 +1,5 @@
 {
-  "name": "my-react-project",
+  "name": "my-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "daisyui": "^4.12.24",
+    "daisyui": "^5.5.19",
+    "lucide-react": "^0.577.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },
