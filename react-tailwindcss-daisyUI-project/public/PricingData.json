@@ -20,6 +20,7 @@
     "id": 2,
     "name": "Pro",
     "price": "$12/month",
+    "popular": true,
     "response": "Unlock powerful tools and grow faster.",
     "description": "Best for active users who need more flexibility and performance.",
     "features": [
@@ -29,10 +30,7 @@
       "Priority email support",
       "Faster processing speed",
       "Up to 5 user accounts",
-      "Custom themes & branding",
-      "API access",
-      "Export data (CSV, PDF)",
-      "Automation tools"
+      "Custom themes & branding"
     ]
   },
   {
@@ -48,11 +46,7 @@
       "24/7 priority support",
       "Custom integrations",
       "Highest performance & speed",
-      "Advanced security (2FA, encryption)",
-      "Team collaboration tools",
-      "Usage insights & reports",
-      "Early access to new features",
-      "Custom onboarding & training"
+      "Advanced security (2FA, encryption)"
     ]
   }
 ]
