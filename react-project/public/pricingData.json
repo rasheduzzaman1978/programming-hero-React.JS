@@ -1,0 +1,52 @@
+[
+    {
+      "name": "Basic",
+      "id": 1,
+      "price_bdt": 800,
+      "duration": "monthly",
+      "description": "Best for beginners and budget-friendly users",
+      "features": [
+        "Access to gym (6 AM - 4 PM)",
+        "Basic workout equipment",
+        "Locker facility",
+        "Free fitness assessment (1 time)",
+        "Access to stretching area",
+        "Water station access",
+        "Mobile app check-in",
+        "Beginner workout guideline chart"
+      ]
+    },
+    {
+      "name": "Standard",
+      "popular": true,
+      "id": 2,
+      "price_bdt": 1500,
+      "duration": "monthly",
+      "description": "Ideal for regular fitness users",
+      "features": [
+        "Full-day access (6 AM - 10 PM)",
+        "All equipment access (cardio + weights)",
+        "Locker and shower facility",
+        "2 personal trainer sessions per month",
+        "Access to group classes (Yoga, HIIT, Cardio)",
+        "Monthly fitness assessment",
+        "Basic diet guideline"
+      ]
+    },
+    {
+      "name": "Premium",
+      "id": 3,
+      "price_bdt": 2500,
+      "duration": "monthly",
+      "description": "Perfect for serious fitness and transformation",
+      "features": [
+        "24/7 gym access",
+        "Unlimited personal trainer support",
+        "Customized workout plan",
+        "Personalized diet and nutrition plan",
+        "All group classes included",
+        "Steam and sauna access",
+        "Weekly progress tracking"
+      ]
+    }
+  ]

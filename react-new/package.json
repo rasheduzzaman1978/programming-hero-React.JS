@@ -12,10 +12,13 @@
   "dependencies": {
     "axios": "^1.13.6",
     "daisyui": "^4.12.24",
+    "hamburger-react": "^2.5.2",
     "lucide-react": "^0.577.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "recharts": "^3.8.0"
+    "react-loader-spinner": "^8.0.2",
+    "recharts": "^3.8.0",
+    "tslib": "^2.8.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",
