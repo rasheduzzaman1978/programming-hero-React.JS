@@ -10,8 +10,8 @@ const PricingCard = ({pricing}) => {
     <div className='border flex flex-col bg-amber-600 rounded-2xl p-4'>
       {/* Card header */}
       <div className='space-y-2'>
-        <h1 className='text-5xl'>{name}</h1>
-        <h4 className='text-2xl'>{price_bdt} Tk</h4>
+        <h1 className='text-2xl md:text-3xl lg:text-5xl'>{name}</h1>
+        <h4 className='text-base md:text-xl lg:text-2xl'>{price_bdt} Tk</h4>
       </div>
 
       {/* card body */}

@@ -10,13 +10,13 @@ const PricingOptions = ({pricingPromise}) => {
 
   return (
     <div>
-      <h2 className='text-5xl text-center mt-6 mb-6'>Get Our Membership</h2>
+      <h2 className='text-2xl md:text-3xl lg:text-4xl text-center mt-6 mb-6'>Get Our Membership</h2>
 
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 mx-4'>
 
-        {/* {
+        {
           pricingData.map(pricing => <PricingCard key={pricing.id} pricing={pricing}></PricingCard>)
-        } */}
+        }
 
         {/* DaisyPricingCard  */}
 
