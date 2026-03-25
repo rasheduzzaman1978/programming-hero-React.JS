@@ -2,7 +2,6 @@
 import NavBar from './components/NavBar/NavBar';
 
 import './App.css'
-// import Link from './components/NavBar/Link';
 import { Suspense } from 'react';
 import PricingOptions from './components/PricingOptions/PricingOptions';
 import ResultChart from './components/ResultChart/ResultChart';
