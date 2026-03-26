@@ -53,7 +53,7 @@ const SelectedPlayers = ({
               <img
                 src={player.player_image}
                 alt={player.player_name}
-                className="w-12 h-12 rounded-md object-cover object-top"
+                className="w-16 md:w-24 h-12 md:h-20 rounded-md object-cover object-top"
               />
 
               <div>

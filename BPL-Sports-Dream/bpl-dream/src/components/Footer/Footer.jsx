@@ -1,83 +1,80 @@
-import logo from "../../assets/logo.png";
-import heroLogo from "../../assets/banner-main.png";
+import { Link } from "react-router-dom";
+import logoFooter from "../../assets/logo-footer.png";
+
+const links = [
+  { name: "Home", path: "/" },
+  { name: "Services", path: "/services" },
+  { name: "About", path: "/about" },
+  { name: "Contact", path: "/contact" },
+];
+
 
 const Footer = () => {
   return (
-    <div className="bg-[#060B2B] text-white pt-32 pb-6 px-4">
+    <footer className="bg-[#060B2B] text-white pt-36 md:pt-60 pb-6 px-4">
       
       {/* Logo */}
-      <div className="flex justify-center mb-8">
-        <img src={heroLogo} alt="logo" className="w-20 md:w-24 lg:w-36" />
+      <div className="flex justify-center mb-10">
+        <img
+          src={logoFooter}
+          alt="logo"
+          className="w-24 md:w-28 lg:w-36 opacity-90"
+        />
       </div>
 
-      {/* Grid Section */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+      {/* Grid */}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-sm">
         
         {/* About */}
         <div>
-          <h3 className="font-semibold mb-2">About Us</h3>
-          <p className="text-gray-400">
-            We are a passionate team dedicated to providing the best services to our customers.
+          <h3 className="font-semibold mb-3 md:text-lg">About Us</h3>
+          <p className="text-gray-400 leading-relaxed">
+            We are a passionate team dedicated to providing the best services to our customers with quality and care.
           </p>
         </div>
 
         {/* Links */}
         <div>
-          <h3 className="font-semibold mb-2">Quick Links</h3>
-          <ul className="text-gray-400 space-y-1">
-            <li>• Home</li>
-            <li>• Services</li>
-            <li>• About</li>
-            <li>• Contact</li>
-          </ul>
+          <h3 className="font-semibold mb-3 md:text-lg">Quick Links</h3>
+          <ul className="text-gray-400 space-y-2">
+  {links.map((link) => (
+    <li key={link.name}>
+      <Link
+        to={link.path}
+        className="hover:text-white hover:translate-x-1 transition duration-200 block"
+      >
+        • {link.name}
+      </Link>
+    </li>
+  ))}
+</ul>
         </div>
 
         {/* Subscribe */}
         <div>
-          <h3 className="font-semibold mb-2">Subscribe</h3>
-          <p className="text-gray-400 mb-2">
-            Subscribe to our newsletter for the latest updates.
+          <h3 className="font-semibold mb-3 md:text-lg">Subscribe</h3>
+          <p className="text-gray-400 mb-4">
+            Get the latest updates and news directly in your inbox.
           </p>
-          {/* <div className="flex bg-white rounded-l-lg">
+
+          <div className="flex items-center bg-white rounded-lg overflow-hidden shadow-md">
             <input
               type="email"
               placeholder="Enter your email"
-              className="px-3 py-2 rounded-l-lg text-black w-full"
+              className="px-4 py-2 w-full text-black outline-none"
             />
-            <button className="btn bg-gradient-to-r from-pink-400 to-yellow-400 text-black font-semibold">
-              Subscribe
+            <button className="btn border-none bg-gradient-to-r from-pink-400 to-yellow-400 text-black font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg">
+            Subscribe
             </button>
-          </div> */}
-
-          <div className="join">
-  <div>
-    <label className="input validator join-item">
-      <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <g
-          strokeLinejoin="round"
-          strokeLinecap="round"
-          strokeWidth="2.5"
-          fill="none"
-          stroke="currentColor"
-        >
-          <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-        </g>
-      </svg>
-      <input type="email" placeholder="Enter your email" required className="text-black"/>
-    </label>
-    
-  </div>
-  <button className="btn bg-gradient-to-r from-pink-400 to-yellow-400 text-black font-semibold join-item">Subscribe</button>
-</div>
+          </div>
         </div>
       </div>
 
-      {/* Bottom */}
-      <div className="border-t border-gray-700 mt-8 pt-4 text-center text-gray-400 text-sm">
-        ©2026 Your Company All Rights Reserved.
+      {/* Divider */}
+      <div className="border-t border-gray-700 mt-10 pt-4 text-center text-gray-400 text-sm">
+        © {new Date().getFullYear()} Your Company. All Rights Reserved.
       </div>
-    </div>
+    </footer>
   );
 };
 

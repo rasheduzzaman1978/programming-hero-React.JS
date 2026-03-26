@@ -3,6 +3,7 @@
 
 import './App.css';
 import { Toaster } from 'react-hot-toast';
+
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import AvailablePlayers from './components/AvailablePlayers/AvailablePlayers';
@@ -27,6 +28,7 @@ function App() {
   return (
     <>
       <Toaster position="top-center" />
+       
       
       
       <Navbar availableBalance={availableBalance}></Navbar>
