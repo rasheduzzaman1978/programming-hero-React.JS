@@ -14,15 +14,15 @@ import ShowHidePassword from './ShowHidePassword';
 import Comments from './Comments';
 
 
-const fetchUsers = fetch('https://jsonplaceholder.typicode.com/users')
-  .then(res => res.json())
+// const fetchUsers = fetch('https://jsonplaceholder.typicode.com/users')
+//   .then(res => res.json())
 
 // const fetchFriends = async () => {
 //   const res = await fetch('https://jsonplaceholder.typicode.com/users');
 //   return res.json();
 // }
 
-// const fetchPosts =async() => {
+// const fetchPosts = async() => {
 //   const res = await fetch('https://jsonplaceholder.typicode.com/posts');
 //   return res.json();
 // }
@@ -30,7 +30,7 @@ const fetchUsers = fetch('https://jsonplaceholder.typicode.com/users')
 const fetchComments = async () => {
   const res = await fetch('https://jsonplaceholder.typicode.com/comments');
   const data = await res.json();
-  return data.slice(0, 10);
+  return data.slice(0, 50);
 }
 
 

@@ -4,7 +4,7 @@ import Singer from './Singer';
 import Library from './Library';
 
 function App() {
-  // const actors = ['Bappa Raj', 'Omar Sani', 'Salman Shah', 'Rajjak'];
+  const actors = ['Bappa Raj', 'Omar Sani', 'Salman Shah', 'Rajjak'];
 
   const singers = [
     { id: 1, name: 'Nabil',  age: 20 },
@@ -29,10 +29,10 @@ function App() {
         <Singer key={singer.id} singer={singer} />
       ))}
 
-      {/* <h2>Actors</h2>
+      <h2>Actors</h2>
       {actors.map((actor, index) => (
-        <Actor key={index} name={actor} />   // ← এখানে name prop দিলাম
-      ))} */}
+        <Actor key={index} actor={actor} />   // ← এখানে name prop দিলাম
+      ))}
     </>
   );
 }

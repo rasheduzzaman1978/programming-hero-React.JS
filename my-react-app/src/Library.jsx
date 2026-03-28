@@ -15,8 +15,7 @@ export default function Library({ books }) {
           {books.map(book => (
             <Book 
               key={book.id}
-              name={book.name}
-              price={book.price}
+              book={book}
             />
           ))}
         </ul>
