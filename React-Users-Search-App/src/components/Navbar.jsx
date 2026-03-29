@@ -1,12 +1,18 @@
+
 // Navbar.jsx
 import React from 'react';
 import Hamburger from 'hamburger-react';
 import SearchBar from './SearchBar';
 
 const Navbar = ({ isOpen, setOpen, searchText, setSearchText }) => {
+  const handleSearch = () => {
+    console.log('Searching for:', searchText);
+    // এখানে চাইলে navigate, API call বা filter logic দিতে পারো
+  };
+
   return (
     <>
-      <div className="navbar bg-base-100 shadow-sm px-4">
+      <div className="navbar sticky top-0 z-50 max-w-6xl mx-auto bg-base-100 shadow-sm px-4">
         {/* Mobile Menu Button */}
         <div className="flex-none lg:hidden">
           <button
@@ -32,45 +38,19 @@ const Navbar = ({ isOpen, setOpen, searchText, setSearchText }) => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex items-center gap-2">
+        <div className="hidden lg:flex justify-between items-center gap-2">
           <SearchBar
             searchText={searchText}
             setSearchText={setSearchText}
             className="hidden lg:block w-48 md:w-64"
           />
 
-          <div className="dropdown dropdown-end">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost btn-circle avatar"
-            >
-              <div className="w-10 rounded-full">
-                <img
-                  alt="User Avatar"
-                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-                />
-              </div>
-            </div>
-
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-            >
-              <li>
-                <a className="justify-between">
-                  Profile
-                  <span className="badge">New</span>
-                </a>
-              </li>
-              <li>
-                <a>Settings</a>
-              </li>
-              <li>
-                <a>Logout</a>
-              </li>
-            </ul>
-          </div>
+          <button
+            onClick={handleSearch}
+            className="btn btn-primary"
+          >
+            Search
+          </button>
         </div>
       </div>
 
@@ -86,6 +66,13 @@ const Navbar = ({ isOpen, setOpen, searchText, setSearchText }) => {
             setSearchText={setSearchText}
             className="w-full"
           />
+
+          <button
+            onClick={handleSearch}
+            className="btn btn-primary w-full"
+          >
+            Search
+          </button>
 
           <ul className="menu bg-base-100 rounded-box">
             <li>

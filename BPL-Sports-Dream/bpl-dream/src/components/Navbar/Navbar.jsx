@@ -15,7 +15,7 @@ const Navbar = ({ availableBalance }) => {
   ];
 
   return (
-    <div className="navbar max-w-6xl mx-auto px-4 mt-4">
+    <div className="navbar sticky top-0 z-50 bg-white max-w-6xl mx-auto px-4 mt-4">
 
       {/* Left */}
       <div className="flex-1 flex items-center">
