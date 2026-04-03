@@ -4,10 +4,17 @@ import { toast } from "react-toastify";
 const ModelCard = ({ model, carts, setCarts }) => {
   const [isSubcribed, setIsSubscribed] = useState(false);
 
-  const handleSubsScription = () => {
+  const handleSubscription = () => {
+    console.log(carts);
     setIsSubscribed(true);
 
-    const isFound = carts.find((item) => item.id === model.id);
+    // const isFound = carts.find((item) => item.id === model.id);
+    // Or 
+    const isFound = carts.find((item) => {
+      console.log(item);
+      return item.id === model.id;
+    });
+    
 
     if (isFound) {
       toast.error("Item already in cart!");
@@ -29,7 +36,7 @@ const ModelCard = ({ model, carts, setCarts }) => {
         <p>{model.description}</p>
         <div className="text-2xl font-bold">${model.price}/month</div>
         <button
-          onClick={handleSubsScription}
+          onClick={handleSubscription}
           className="btn w-full bg-red-500 text-white rounded-lg mt-5"
         >
           {isSubcribed ? "Subscribed" : "Subscribe Now"}

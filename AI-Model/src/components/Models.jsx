@@ -3,6 +3,7 @@ import ModelCard from "../components/ModelCard";
 
 const Models = ({modelPromise, carts, setCarts}) => {
   const models = use(modelPromise);
+  console.log(models);
 
   return (
     <div className='py-20 max-w-7xl mx-auto'>

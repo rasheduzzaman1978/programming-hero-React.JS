@@ -9,6 +9,7 @@ const Cart = ({ carts, setCarts }) => {
   };
 
   const handleDelete = (item) => {
+    console.log(item);
     const filteredArray = carts.filter((c) => c.id !== item.id);
     setCarts(filteredArray);
 
